@@ -1,0 +1,120 @@
+/* media query */
+
+@media only screen and (max-width: 825px) {
+  .contents .btn {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .content-1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .content-1 .left {
+    /* border: #e50914 2px solid; */
+    text-align: center;
+  }
+  .content-1 .btn {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .content-2 {
+    overflow: hidden;
+    /* border: 2px solid purple; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-rows: 6.5rem 1fr 1fr 1fr;
+    column-gap: rem;
+    row-gap: 2rem;
+    /* word-spacing: 0.4rem; */
+  }
+
+  .content-2a-box {
+    grid-column: 1/4;
+  }
+
+  .content-2b-box {
+    grid-column: 1/4;
+  }
+
+  .content-2c-box {
+    grid-column: 1/4;
+  }
+
+  .content-2-items h4 {
+    font-weight: 400;
+    margin: 0.6rem 0 2rem 0;
+  }
+
+  .content-2-items h4 {
+    font-weight: 400;
+    margin: 0 0 0.6rem 0;
+  }
+
+  /* header */
+
+  h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 1rem;
+  }
+
+  .email-input {
+    /* border: 2px solid rgb(52, 189, 105); */
+    display: block;
+    flex-flow: column wrap;
+    font-size: 1.6rem;
+    justify-content: center;
+  }
+
+  .email-input-form {
+    height: 4rem;
+    color: var(--var-black);
+    font-size: 1.6rem;
+    padding-left: 0.5rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .form-label {
+    display: block;
+    background-color: var(--var-red);
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    padding: 0.5rem 4rem;
+    max-width: 70%;
+    margin: 1rem auto;
+  }
+
+  @media only screen and (max-width: 360px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    .main-header p {
+      font-size: 1.6rem;
+    }
+
+    .tabs-container .fa {
+      transform: scale(2);
+      margin-bottom: 0;
+    }
+
+    .tabs-container p {
+      display: none;
+    }
+
+    .content-section-inner {
+      max-width: 80%;
+    }
+  }
+}
